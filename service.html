@@ -292,17 +292,16 @@
 
 <script src="js/script.js"></script>
 <script>
-window.onscroll = () => {
-  $(function() {
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 50) {
-            $(".header").addClass("active1");
+$(function() {
+      $(window).on("scroll", function() {
+        if($(window).scrollTop() > 300) {
+          $(".header").addClass("active1");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $(".header").removeClass("active1");
-        }
+            $(".header").removeClass("active1");
+          }
+        });
     });
-});
 
 // header 
 </script>
